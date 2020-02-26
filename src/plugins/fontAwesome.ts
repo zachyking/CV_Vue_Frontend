@@ -5,8 +5,8 @@ import { faExpandArrowsAlt, faFileDownload } from '@fortawesome/free-solid-svg-i
 import { faCodepen, faTwitter, faStackOverflow, faGithub, faVuejs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-var i = [ faExpandArrowsAlt, faCheckSquare, faFileDownload ];
-var b = [ faCodepen, faTwitter, faStackOverflow, faGithub, faVuejs ];
-[...i, ...b].forEach(i => library.add(i));
+const a = [ faExpandArrowsAlt, faCheckSquare, faFileDownload ];
+const b = [ faCodepen, faTwitter, faStackOverflow, faGithub, faVuejs ];
+[...a, ...b].forEach((i) => library.add(i));
 
 Vue.component('fa-icon', FontAwesomeIcon);

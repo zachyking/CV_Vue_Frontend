@@ -51,7 +51,7 @@
     import Vue from 'vue';
     import Education from './components/Education.vue';
     import Introduction from './components/Introduction.vue';
-    import { education } from '@/assets/cv';
+    //  import { education } from '@/assets/cv';
 
     export default Vue.extend({
         name: 'App',

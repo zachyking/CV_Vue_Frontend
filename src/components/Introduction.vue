@@ -10,9 +10,9 @@
             profile: {} as IProfile,
         }),
         methods: {
-            open: function (url: string) {
-                window.open(url, "_blank");
-            }
+            open(url: string) {
+                window.open(url, '_blank');
+            },
         },
         mounted() {
             this.buttons = buttons;
