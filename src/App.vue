@@ -22,7 +22,7 @@
 
             <section id="section-2" class="section hero is-info is-fullheight">
                 <div class="container">
-                    <Header></Header>
+                    <Introduction></Introduction>
                 </div>
             </section>
 
@@ -50,14 +50,14 @@
 <script lang="ts">
     import Vue from 'vue';
     import Education from './components/Education.vue';
-    import Header from './components/Header.vue';
+    import Introduction from './components/Introduction.vue';
     import { education } from '@/assets/cv';
 
     export default Vue.extend({
         name: 'App',
         components: {
             Education,
-            Header,
+            Introduction,
         },
     });
 </script>
@@ -66,9 +66,6 @@
 <style scoped src="@/assets/header.css"></style>
 
 <style>
-    nav ul li {
-        vertical-align: middle;
-    }
     /*#app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
