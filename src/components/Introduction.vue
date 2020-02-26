@@ -4,7 +4,7 @@
     import { IButton, IProfile } from '@/types';
 
     export default Vue.extend({
-        name: 'Header',
+        name: 'Introduction',
         data: () => ({
             buttons: {} as IButton[],
             profile: {} as IProfile,
