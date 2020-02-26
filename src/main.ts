@@ -1,11 +1,14 @@
 import Vue from 'vue';
 import App from './App.vue';
 import './registerServiceWorker';
-import store from './store';
+import './plugins/scrollactive';
+import vuetify from './plugins/vuetify';
+import store from './plugins/store';
 
 Vue.config.productionTip = false;
 
 new Vue({
-  store,
+    vuetify,
+    store,
   render: (h) => h(App),
 }).$mount('#app');

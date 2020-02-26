@@ -1,0 +1,81 @@
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body {
+	margin: 0
+}
+
+article, aside, footer, header, nav, section {
+	display: block
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0
+}
+
+figcaption, figure, main {
+	display: block
+}
+
+figure {
+	margin: 1em 40px
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible
+}
+
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em
+}
+
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects
+}
+
+img {
+	border-style: none
+}
+
+
+template {
+	display: none
+}
+
+.nav.is-fixed {
+	position: fixed;
+	left: 0;
+	right: 0
+}
+
+	.nav.is-fixed .is-active {
+		color: #00d1b2
+	}
+
+.section {
+	padding-top: 100px
+}
+
+.is-fullheight {
+	min-height: 100vh
+}
+
+.nav {
+	text-align: center;
+}
+
+	.nav li {
+		display: inline;
+	}
+
+	.nav a {
+		display: inline-block;
+	}
