@@ -29,3 +29,126 @@ Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saep
     Lets get in touch!
     `,
 };
+
+// tslint:disable:max-line-length
+export const experience = [
+    {
+        company: 'Random Company',
+        title: 'Software Engineer',
+        years: '2016 - 2018',
+        tags: ['.Net', 'C#'],
+        logo: '',
+        description: `
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>`,
+    },
+    {
+        company: 'Zachy`s Company',
+        title: 'Software Engineer',
+        years: '2016 - 2018',
+        tags: ['.Net', 'C#'],
+        logo: '',
+        description: `
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>`,
+    },
+];
+
+export const complementary = [
+    {
+        title: 'Agile Software Development',
+    },
+    {
+        title: 'Strong OOP',
+    },
+    {
+        title: 'Interested in TDD',
+    },
+    {
+        title: 'Interested UX and Design',
+    },
+    {
+        title: 'Design Patterns',
+    },
+];
+
+export const stack = [
+    {
+        label: 'Frameworks',
+        techs: [
+            {
+                avatar: 'https://vuejs.org/images/logo.png',
+                title: 'VueJs',
+                skill: 0,
+                target: 85,
+            },
+            {
+                avatar: 'https://angular.io/assets/images/logos/angular/angular.svg',
+                title: 'Angular',
+                skill: 0,
+                target: 75,
+            },
+            {
+                avatar: 'https://docs.microsoft.com/en-us/dotnet/images/hub/net.svg',
+                title: '.NET Framework',
+                skill: 0,
+                target: 70,
+            },
+            {
+                avatar: 'https://docs.microsoft.com/en-us/dotnet/images/hub/netcore.svg',
+                title: '.NET Core',
+                skill: 0,
+                target: 55,
+            },
+        ],
+    },
+    {
+        label: 'Languages',
+        techs: [
+            {
+                avatar: 'https://cdn-images-1.medium.com/max/1052/1*DN7ToydkJZEdVaJVK_Nhvw.png',
+                title: 'Javascript',
+                skill: 0,
+                target: 70,
+            },
+            {
+                avatar: 'https://docs.microsoft.com/en-us/dotnet/images/hub/csharp.svg',
+                title: 'C#',
+                skill: 0,
+                target: 75,
+            },
+            {
+                avatar: 'https://cdn-images-1.medium.com/max/1187/1*JsyV8lXMuTbRVLQ2FPYWAg.png',
+                title: 'Typescript',
+                skill: 0,
+                target: 65,
+            },
+            {
+                avatar: 'https://i.pinimg.com/236x/4c/b7/5b/4cb75bba270525ab419c4ad4d27e6ebe--python.jpg',
+                title: 'Python',
+                skill: 0,
+                target: 50,
+            },
+        ],
+    },
+];

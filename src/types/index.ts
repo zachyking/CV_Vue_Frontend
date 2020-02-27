@@ -18,3 +18,20 @@ export interface IProfile {
     image: string;
     overview: string;
 }
+
+export interface IExperience {
+    company: string;
+    title: string;
+    years: string;
+    tags: string[];
+    logo: string;
+    description: string;
+}
+
+export interface IExperienceItem {
+    company: string;
+    title: string;
+    description: string;
+    logo: string;
+    tags: string[];
+}

@@ -79,3 +79,11 @@ template {
 	.nav a {
 		display: inline-block;
 	}
+right-float {
+	float: right;
+	margin-right: auto;
+}
+left-float {
+	float: left;
+	margin-left: auto;
+}
