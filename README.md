@@ -8,7 +8,7 @@ In the future backend API should follow in ASP.NET CORE for quick uploading the 
 
 npm: https://www.npmjs.com/get-npm
 
-vue cli
+vue cli: https://cli.vuejs.org/guide/installation.html
 
 ## Project setup
 ```
