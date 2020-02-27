@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <v-col xs4 md4>
+    <v-container>
         <div class="title font-weight-regular">Complementary</div>
         <br />
         <v-list dense>
@@ -33,7 +33,7 @@
                 <v-divider :key="index" v-if="index < skills.length - 1"></v-divider>
             </template>
         </v-list>
-    </v-col>
+    </v-container>
 </template>
 
 <style scoped>

@@ -72,6 +72,26 @@ cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis vol
 cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
         <br/>`,
     },
+    {
+        company: 'Zachy`s 2 Company',
+        title: 'Software Engineer',
+        years: '2016 - 2018',
+        tags: ['.Net', 'C#'],
+        logo: '',
+        description: `
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>
+        <br/>
+cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
+        <br/>`,
+    },
 ];
 
 export const complementary = [

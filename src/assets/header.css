@@ -87,3 +87,7 @@ left-float {
 	float: left;
 	margin-left: auto;
 }
+
+ul {
+	list-style: none
+}
