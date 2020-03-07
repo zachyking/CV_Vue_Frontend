@@ -34,7 +34,7 @@
                     <h2>Curriculum Vitae</h2>
                 </v-container>
             </section>
-            <section id="Profile" class="grey">
+            <section id="Profile" class="profile">
                 <v-container>
                     <v-row>
                         <v-col xs12 lg8 offset-lg2>
@@ -44,7 +44,7 @@
                     </v-row>
                 </v-container>
             </section>
-            <section id="Experience" class="red">
+            <section id="Experience" class="experience">
                 <v-container>
                     <v-row>
                         <v-col xs12 lg8 offset-lg2>
@@ -53,7 +53,7 @@
                     </v-row>
                 </v-container>
             </section>
-            <section id="Skills" class="green">
+            <section id="Skills" class="skills">
                 <v-container>
                     <v-row>
                         <v-col xs12 lg8 offset-lg2>
@@ -62,7 +62,7 @@
                     </v-row>
                 </v-container>
             </section>
-            <section id="OtherSkills" class="blue">
+            <section id="OtherSkills" class="other-skills">
                 <v-container>
                     <v-row>
                         <v-col xs12 lg8 offset-lg2>
@@ -125,11 +125,11 @@
 
                     // }
                     if (y > 300) {
-                        navig.classList.add('black');
+                        navig.classList.add('my-navig');
                         navig.classList.remove('transp');
                     } else {
                         navig.classList.add('transp');
-                        navig.classList.remove('black');
+                        navig.classList.remove('my-navig');
                     }
                 }
             };
@@ -141,24 +141,29 @@
 <style scoped src="@/assets/header.css"></style>
 
 <style scoped>
-    .grey {
-        background-color: #dbe9f4;
+    .profile {
+        background-color: #C3C3C3;
     }
 
-    .red {
-        background-color: #ff3860;
+    .experience {
+        background-color: #BBA399;
     }
 
-    .green {
-        background-color: #23d160;
+    .skills {
+        background-color: #C3C3C3;
     }
 
-    .blue {
-        background-color: #3273dc;
+    .other-skills {
+        background-color: #908481;
+    }
+
+    h1, h2 {
+        color: #F4F3F3;
     }
 
     .landing {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1538947117537-48239ec91f18);
+        /*background: url(https://images.unsplash.com/photo-1538947117537-48239ec91f18);*/
+        background: url(../public/web-background.png)
     }
 
     #Home {
@@ -177,11 +182,11 @@
     }
 
     .transp {
-        /*background: #000;*/
-        background: transparent;
+        background: none;
+        background-image: linear-gradient(rgba(84,110,140,0.5), rgba(84,110,140,0));
     }
 
-    .black {
-        background: #000000;
+    .my-navig {
+        background: #546E8C;
     }
 </style>
