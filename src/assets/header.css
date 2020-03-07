@@ -57,7 +57,7 @@ template {
 }
 
 	.nav.is-fixed .is-active {
-		color: #00d1b2
+		color: #fff;
 	}
 
 .section {

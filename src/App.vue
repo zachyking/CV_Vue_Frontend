@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <header id="site-header" class="nav is-fixed">
+        <header id="navig" class="nav is-fixed transp">
             <div class="container">
                 <scrollactive>
                     <ul class="nav-center">
@@ -10,37 +10,66 @@
                         <!--  3-4 top professional interests with skill level (Web & Desktop apps, Data, Machine Learning) -->
                         <!--<li><a href="#section-4" class="scrollactive-item nav-item">Top interests</a></li>-->
                         <li><a href="#Skills" class="scrollactive-item nav-item">Skills</a></li>
+                        <li><a href="#OtherSkills" class="scrollactive-item nav-item">Other skills</a></li>
                         <!--<li><a href="#section-4" class="scrollactive-item nav-item">Contact me</a></li>-->
                     </ul>
                 </scrollactive>
             </div>
         </header>
         <main>
-                <section id="Home" class="section hero is-fullheight">
-                    <div class="overlay-container">
-                    </div>
-                </section>
-            </div>
-            <section id="Profile" class="section hero is-info is-fullheight">
-                <div class="container">
-                    <Introduction></Introduction>
-                    <Education></Education>
-                </div>
+            <section id="Home" class="landing">
+                <v-container>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h1>Software engineer</h1>
+                    <h2>Curriculum Vitae</h2>
+                </v-container>
             </section>
-            <section id="Experience" class="section hero is-danger is-fullheight">
-                <div class="container">
-                    <Experience v-on:selected="openDialog"></Experience>
-                </div>
+            <section id="Profile" class="grey">
+                <v-container>
+                    <v-row>
+                        <v-col xs12 lg8 offset-lg2>
+                            <Introduction></Introduction>
+                            <Education></Education>
+                        </v-col>
+                    </v-row>
+                </v-container>
             </section>
-            <section id="Skills" class="section hero is-success is-fullheight">
-                <div class="container">
-                    <v-col>
-                        <Tech></Tech>
-                    </v-col>
-                    <v-col>
-                        <Complementary></Complementary>
-                    </v-col>
-                </div>
+            <section id="Experience" class="red">
+                <v-container>
+                    <v-row>
+                        <v-col xs12 lg8 offset-lg2>
+                            <Experience v-on:selected="openDialog"></Experience>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </section>
+            <section id="Skills" class="green">
+                <v-container>
+                    <v-row>
+                        <v-col xs12 lg8 offset-lg2>
+                            <Tech></Tech>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </section>
+            <section id="OtherSkills" class="blue">
+                <v-container>
+                    <v-row>
+                        <v-col xs12 lg8 offset-lg2>
+                            <Complementary></Complementary>
+                        </v-col>
+                    </v-row>
+                </v-container>
             </section>
             <v-footer app>
                 <a class="mr-4" href="https://github.com/zachyking/CV_Vue_Frontend" target="_blank">Check this on GitHub!<fa-icon :icon="['fab', 'github']" size="lg"></fa-icon></a>
@@ -82,9 +111,29 @@
                 this.itemSelected = val;
             },
         },
-        //mounted() {
+        mounted() {
+            window.onscroll = () => {
+                const navig = document.getElementById('navig');
+                const y: number = window.pageYOffset;
 
-        //}
+                if (navig !== null) {
+
+                    // if (y < 300) {
+                    //    const currOp: number = 300 / y;
+                    //    navig.style.opacity = currOp.toString();
+                    //    console.log("opacity: " + currOp);
+
+                    // }
+                    if (y > 300) {
+                        navig.classList.add('black');
+                        navig.classList.remove('transp');
+                    } else {
+                        navig.classList.add('transp');
+                        navig.classList.remove('black');
+                    }
+                }
+            };
+        },
     });
 </script>
 
@@ -92,17 +141,47 @@
 <style scoped src="@/assets/header.css"></style>
 
 <style scoped>
-    #Home {
-        width:100%;
-        background-image: url(
-            https://images.pexels.com/photos/125509/pexels-photo-125509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-            );
-        background-repeat: round;
+    .grey {
+        background-color: #dbe9f4;
     }
-    .overlay-container {
-        width:100%;
-        height:100%;
-        background: #000;
-        opacity: 0.5;
+
+    .red {
+        background-color: #ff3860;
+    }
+
+    .green {
+        background-color: #23d160;
+    }
+
+    .blue {
+        background-color: #3273dc;
+    }
+
+    .landing {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1538947117537-48239ec91f18);
+    }
+
+    #Home {
+        width: 100%;
+        /*background-image: url(https://images.unsplash.com/photo-1538947117537-48239ec91f18);*/
+        background-repeat: round;
+        background-attachment: fixed;
+        text-align: center;
+        vertical-align: central;
+        color: #ffffff;
+    }
+
+    section {
+        min-height: 100vh;
+        width: 100vw;
+    }
+
+    .transp {
+        /*background: #000;*/
+        background: transparent;
+    }
+
+    .black {
+        background: #000000;
     }
 </style>

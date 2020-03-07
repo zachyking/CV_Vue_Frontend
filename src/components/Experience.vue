@@ -15,7 +15,6 @@
 <template>
     <v-col xs12 md8>
         <div class="title font-weight-regular">Professional Experience</div>
-        <br>
         <v-card v-for="(e, i) in xp" :key="e.company" class="mb-2">
             <v-container fluid grid-list-lg>
                 <v-row>

@@ -9,31 +9,33 @@
                 return complementary;
             },
         },
-        mounted() {
-            console.log(this.skills);
-        },
+        // mounted() {
+        //    // console.log(this.skills);
+        // },
     });
 </script>
 
 <template>
-    <v-container>
+    <v-col xs4>
         <div class="title font-weight-regular">Complementary</div>
         <br />
         <v-list dense>
-            <template v-for="(item, index) in skills">
-                <v-list-item :key="item.title">
-                    <v-list-item-avatar>
-                        <fa-icon :icon="['far', 'check-square']" size="2x" color="secondary lighten-6"></fa-icon>
-                    </v-list-item-avatar>
+            <v-col xs6>
+                <template v-for="(item, index) in skills">
+                    <v-list-item :key="item.title">
+                        <v-list-item-avatar>
+                            <fa-icon :icon="['far', 'check-square']" size="2x" color="secondary lighten-6"></fa-icon>
+                        </v-list-item-avatar>
 
-                    <v-list-item-content>
-                        <v-list-item-title v-html="item.title"></v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-divider :key="index" v-if="index < skills.length - 1"></v-divider>
-            </template>
+                        <v-list-item-content>
+                            <v-list-item-title v-html="item.title"></v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                    <v-divider :key="index" v-if="index < skills.length - 1"></v-divider>
+                </template>
+            </v-col>
         </v-list>
-    </v-container>
+    </v-col>
 </template>
 
 <style scoped>
