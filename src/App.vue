@@ -20,7 +20,6 @@
         </div>
         <div v-else>
             <div class="topnav">
-                <a href="#home" class="active">Logo</a>
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
                     <a href="#Home" class="scrollactive-item nav-item">Home</a>
