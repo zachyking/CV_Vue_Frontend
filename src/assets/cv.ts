@@ -37,7 +37,7 @@ export const experience = [
         title: 'Software Engineer',
         years: '2016 - 2018',
         tags: ['Microsoft Dynamics CRM', '.Net', 'C#', 'Javascript'],
-        logo: 'https://media-exp1.licdn.com/dms/image/C510BAQGLWGZ5s_REXg/company-logo_200_200/0?e=1591228800&v=beta&t=wdALt-ZW7pHLbVKPxDPviBlvfOgvyxAGZ4fY2nj067Q',
+        logo: '',
         description: `
 cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
         <br/>
@@ -57,7 +57,7 @@ cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis vol
         title: 'Software Engineer',
         years: '2016 - 2018',
         tags: ['Microsoft Dynamics CRM', '.Net', 'C#', 'Javascript'],
-        logo: 'https://media-exp1.licdn.com/dms/image/C510BAQGLWGZ5s_REXg/company-logo_200_200/0?e=1591228800&v=beta&t=wdALt-ZW7pHLbVKPxDPviBlvfOgvyxAGZ4fY2nj067Q',
+        logo: '',
         description: `
 cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officii
         <br/>

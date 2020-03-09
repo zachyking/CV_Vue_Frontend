@@ -19,32 +19,31 @@
 
 <template>
     <v-container>
-        <div v-for="s in techs" :key="s.label">
-            <v-col>
-                <div class="subheading font-weight-regular">{{s.label}}</div>
-                <br />
-                <v-list dense>
-                    <template v-for="(item, index) in s.techs">
-                        <v-col xs-6>
-                            <v-list-item :key="item.title">
-                                <v-list-item-avatar>
-                                    <img :src="item.avatar">
-                                </v-list-item-avatar>
+        <v-row>
+            <div v-for="s in techs" :key="s.label" class="card-col">
+                    <div class="subheading font-weight-regular">{{s.label}}</div>
+                    <br />
+                    <v-list dense>
+                        <template v-for="(item, index) in s.techs">
+                            <v-col xs-6>
+                                <v-list-item :key="item.title">
+                                    <v-list-item-avatar>
+                                        <img :src="item.avatar">
+                                    </v-list-item-avatar>
 
-                                <v-list-item-content>
-                                    <v-list-item-title v-html="item.title"></v-list-item-title>
-                                </v-list-item-content>
-                            </v-list-item>
-                            <v-progress-linear color="secondary lighten-5"
-                                               height="5"
-                                               :value="item.skill"
-                                               :key="index"></v-progress-linear>
-                        </v-col>
-                    </template>
-                </v-list>
-                <br>
-            </v-col>
-        </div>
+                                    <v-list-item-content>
+                                        <v-list-item-title v-html="item.title"></v-list-item-title>
+                                    </v-list-item-content>
+                                </v-list-item>
+                                <v-progress-linear color="secondary lighten-5"
+                                                   height="5"
+                                                   :value="item.skill"
+                                                   :key="index"></v-progress-linear>
+                            </v-col>
+                        </template>
+                    </v-list>
+            </div>
+        </v-row>
     </v-container>
 </template>
 
@@ -52,7 +51,6 @@
     .v-list {
         margin: 0 1em 0 0;
     }
-    .
     .v-progress-linear {
         margin-top: 0;
     }
