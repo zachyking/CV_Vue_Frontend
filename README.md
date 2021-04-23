@@ -1,5 +1,7 @@
 # Frontend for CV web app using Vue and Typescript 
 
+## ABANDONDED FOR NOW
+
 You can change my CV to yours, just update /src/assets/cv.ts 
 
 In the future backend API should follow in ASP.NET CORE for quick uploading the file to DB and hosting anybody's CV on one domain. 
